@@ -14,10 +14,9 @@ public class SingletonSynchroLocal {
 	/** Point d'accès pour l'instance unique du singleton */
     public static SingletonSynchroLocal getInstance() 
     {           
-
         if (INSTANCE == null)
         {   
-            synchronized(SingletonSynchroLocal.class) // ++++++++++++++++++
+            synchronized(SingletonSynchroLocal.class)   // ++++++++++++++++++
             {
                 if (INSTANCE == null)
                 {   INSTANCE = new SingletonSynchroLocal();
