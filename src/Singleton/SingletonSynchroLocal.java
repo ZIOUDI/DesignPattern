@@ -32,6 +32,6 @@ public class SingletonSynchroLocal {
  * 
  * supprimer la synchronisation globale sur la méthode,   et ne l'appliquer que dans le cas où l'instance doit être créée 
  *  
- *  ==============>  cette solution, appelée "double-checked locking"
+ *  ==============>  cette solution, appelée "double-checked locking"  ======>  NE FONCTIONNE PAS ============
  * 
  *******/
