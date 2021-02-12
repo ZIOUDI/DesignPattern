@@ -1,9 +1,12 @@
 package Singleton;
-
- 
  
 public class SingletonSynchroGlobal {
-
+	/****************************************************************************************
+	 *  Le problème est ainsi résolu, mais au prix d'une pénalité sur les performances. 
+	 * Si le singleton est accédé
+	 *  souvent (système de log...), le ralentissement de l'application peut être important.
+	 * 
+	 ***************************************************************************************/
 	/** Constructeur privé */
 	private SingletonSynchroGlobal() {
 	}
@@ -21,11 +24,4 @@ public class SingletonSynchroGlobal {
     }
 }
 
-/**
- * 
- * 
- * Le problème est ainsi résolu, mais au prix d'une pénalité sur les performances. Si le singleton est accédé
- *  souvent (système de log...), le ralentissement de l'application peut être important.
- * 
- * 
- *******/
+
