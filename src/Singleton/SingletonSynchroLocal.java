@@ -2,9 +2,9 @@ package Singleton;
 
  
  
-public class SingletonSynchroLocal {
+public class SingletonSynchroLocal  {
 
-	/** Constructeur privé */
+	/** Constructeur privé  SingletonSynchroLocal*/
 	private SingletonSynchroLocal() {
 	}
 
@@ -16,7 +16,7 @@ public class SingletonSynchroLocal {
     {           
         if (INSTANCE == null)
         {   
-            synchronized(SingletonSynchroLocal.class)   // ++++++++++++++++++
+            synchronized(Singleton.class)   // ++++++++++++++++++
             {
                 if (INSTANCE == null)
                 {   INSTANCE = new SingletonSynchroLocal();
